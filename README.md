@@ -1,5 +1,4 @@
 # runeterra
-rebuilding ?
 
 ## Project setup
 ```
