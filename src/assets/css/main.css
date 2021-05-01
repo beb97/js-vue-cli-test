@@ -1,3 +1,14 @@
+:root {
+    --main-bg-color: #fafaee;
+    --main-text-color: #222;
+    --active-bg-color: #E8C150;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: Inter,Roboto, sans-serif;
+}
+
 img {
     width: 64px;
     object-fit: cover;
@@ -15,4 +26,9 @@ img {
 
 .horizontal {
     flex-direction: row;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
 }
