@@ -1,34 +1,32 @@
 <template>
-  <div class="container flex vertical">
-    <div class="name">{{name}}</div>
+  <div class="container flex horizontal">
+    Collectible :
+    <label for="checkbox-collectible">{{ filters }}</label>
+    <input id="checkbox-collectible" type="checkbox" v-model="filters.collectible"/>
   </div>
-<!--<div>{{nameRef}}</div>-->
+
 </template>
 
-<!--description-->
-<!--name-->
-<!--nameRef-->
 
 <script>
 export default {
-name: "Rarity.vue",
-  props: {
-    rarity: Object
-  },
+name: "Filters.vue",
+  props: ['initialFilters'],
+  // emits: ['filtersUpdated'],
   data() {
     return {
-      name: this.rarity.name,
-      nameRef: this.rarity.nameRef,
+      filters: this.initialFilters
     }
+  },
+  methods : {
+    // updatedFilters() {
+    //   console.log("FILTERS : calling onchange updatedFilters")
+    //   this.$emit('filtersUpdated', this.filters);
+    // },
   }
 }
 </script>
 
 <style scoped>
-  .container {
-    border: 1px solid grey;
-  }
-  .name {
-    font-weight: bold;
-  }
+
 </style>

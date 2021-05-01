@@ -29,7 +29,5 @@ name: "Region.vue",
 </script>
 
 <style scoped>
-img {
-  width: 128px;
-}
+
 </style>

@@ -1,7 +1,8 @@
 <template>
-  <div class="container flex horizontal" v-if="card.collectible==true">
-    <div>{{card.name}} </div>
-    <div>({{card.cost}}) </div>
+  <div class="container flex horizontal">
+<!--    <div>{{card.name}} </div>-->
+<!--    <div>({{card.cost}}) </div>-->
+    <img v-bind:src="card.assets[0].gameAbsolutePath"/>
 <!--    <div>: {{card.descriptionRaw}}</div>-->
   </div>
 </template>
@@ -60,5 +61,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+ img {
+   width: 200px;
+ }
 </style>

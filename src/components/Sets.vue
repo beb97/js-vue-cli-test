@@ -33,7 +33,5 @@ name: "Sets.vue",
   .name {
     font-weight: bold;
   }
-  img {
-    width: 128px;
-  }
+
 </style>
