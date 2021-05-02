@@ -2,7 +2,7 @@
   <div class="container flex vertical">
     <form>
       <div id="data">
-        <select multiple size="1" v-model="cost" @change="selectCost">
+        <select class="" multiple size="1" v-model="cost" @change="selectCost">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -15,8 +15,11 @@
           <option>9</option>
           <option>10</option>
           <option>11</option>
-          <option>12</option>
+          <option>12+</option>
         </select>
+<!--        <select multiple size="1" v-model="cost" @change="selectCost">-->
+<!--          <option v-for="region in filters.regions" :key="region.name">{{ region.name }}</option>-->
+<!--        </select>-->
       </div>
     </form>
 <!--    <div>{{ filters }}</div>-->
@@ -33,7 +36,7 @@
 export default {
 name: "Filters.vue",
   props: ['filters'],
-  emits: ['costSelected'],
+  emits: ['filtersUpdated'],
   data() {
     return {
       region: this.filters.region,
@@ -58,7 +61,7 @@ name: "Filters.vue",
       }
 
       console.log("FILTERS result:", result)
-      this.$emit('costSelected', {'cost':result});
+      this.$emit('filtersUpdated', {'cost':result});
     },
   }
 }
@@ -73,6 +76,7 @@ select {
   outline: none;
   overflow:hidden;
   background: transparent;
+  margin-bottom: 10px;
 }
 
 select:active, select:hover {
@@ -84,9 +88,10 @@ select:active, select:hover {
     color: darkgray;
     font-weight: bold;
     border-radius: 30px;
-    display:inline-block;
-    /*margin-right: 10px;*/
-    padding: 10px;
+    padding: 15px;
+    margin-right: 2px;
+    box-shadow: 3px 0px lightgray;
+    display: inline-flex;
   }
 
   /*select[multiple]:focus option:checked {*/

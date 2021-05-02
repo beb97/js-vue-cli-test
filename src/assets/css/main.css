@@ -2,11 +2,70 @@
     --main-bg-color: #fafaee;
     --main-text-color: #222;
     --active-bg-color: #E8C150;
+
+    --targon:#623AE8;
+    --noxus:#BE4644;
+    --demacia:#E7D9B8;
+    --freljord:#9EE2FA;
+    --shadowisles:#0EAC92;
+    --ionia:#D0829C;
+    --shurima:#CEA826;
+    --bilgewater:#B4573A;
+    --piltoverzaun:#EEA25A;
+}
+
+.targon {
+    color: var(--targon);
+    background-color: var(--targon);
+    border-color:var(--targon);
+}
+.noxus {
+    color: var(--noxus);
+    background-color: var(--noxus);
+    border-color:var(--noxus);}
+.demacia {
+    color: var(--demacia);
+    background-color: var(--demacia);
+    border-color:var(--demacia);}
+.freljord {
+    color: var(--freljord);
+    background-color: var(--freljord);
+    border-color:var(--freljord);}
+.shadowisles {
+    color: var(--shadowisles);
+    background-color: var(--shadowisles);
+    border-color:var(--shadowisles);}
+.ionia {
+    color: var(--ionia);
+    background-color: var(--ionia);
+    border-color:var(--ionia);}
+.shurima {
+    color: var(--shurima);
+    background-color: var(--shurima);
+    border-color:var(--shurima);}
+.bilgewater {
+    color: var(--bilgewater);
+    background-color: var(--bilgewater);
+    border-color:var(--bilgewater);}
+.piltoverzaun {
+    color: var(--piltoverzaun);
+    background-color: var(--piltoverzaun);
+    border-color:var(--piltoverzaun);}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 body {
     background-color: var(--main-bg-color);
     font-family: Inter,Roboto, sans-serif;
+}
+
+main {
+    max-width: 1400px;
+    margin: auto;
 }
 
 img {
