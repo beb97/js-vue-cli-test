@@ -4,8 +4,8 @@
     <img alt="Vue logo" src="./assets/logo.png">
   </div>
 
-  <AppCurrentDeck>
-  </AppCurrentDeck>
+<!--  <AppCurrentDeck>-->
+<!--  </AppCurrentDeck>-->
 
   <AppCombatTricks >
   </AppCombatTricks>
@@ -16,14 +16,14 @@
 
 <script>
 import AppCombatTricks from './components/AppCombatTricks'
-import AppCurrentDeck from './components/AppCurrentDeck'
+// import AppCurrentDeck from './components/AppCurrentDeck'
 
 
 export default {
   name: 'App',
   components: {
     AppCombatTricks,
-    AppCurrentDeck,
+    // AppCurrentDeck,
   },
   data() {
     return {

@@ -53,14 +53,13 @@ name: "Filters.vue",
   },
   methods : {
     selectCost() {
-      console.log("FILTERS cost:", this.cost)
       let result = [];
 
       for(const property in this.cost) {
         result.push(parseInt(this.cost[property]));
       }
 
-      console.log("FILTERS result:", result)
+      // console.log("FILTERS result:", result)
       this.$emit('filtersUpdated', {'cost':result});
     },
   }

@@ -100,7 +100,6 @@ export default {
   },
   methods: {
     updateFilters(filters) {
-      console.log("APP",filters);
       // Due to limitations in JavaScript, Vue cannot detect the following changes to an array:
       this.filters[Object.keys(filters)]=Object.values(filters)[0];
       // So we force update
@@ -116,7 +115,6 @@ export default {
     },
     filterCombatTricks: function(card) {
       let speeds= ["Burst", "Fast"];
-      console.log(Object.keys(this.excluded));
       return speeds.includes(card.spellSpeed)
           && ! Object.keys(this.excluded).includes(card.cardCode);
     },
