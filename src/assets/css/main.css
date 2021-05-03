@@ -1,7 +1,20 @@
+@font-face {
+    font-family: "Univers";
+    src: local("Univers"),
+    url(../fonts/univers_55.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"),
+    url(../fonts/BeaufortforLOLJa-Regular.ttf) format("truetype");
+}
+
 :root {
     --main-bg-color: #fafaee;
     --main-text-color: #222;
     --active-bg-color: #E8C150;
+    --mana-color: #18326B;
 
     --targon:#623AE8;
     --noxus:#BE4644;
@@ -68,6 +81,12 @@ main {
     margin: auto;
 }
 
+h1,h2,h3 {
+    margin: 0px;
+    font-family: Univers, Roboto;
+    color: var(--active-bg-color);
+}
+
 img {
     width: 64px;
     object-fit: cover;
@@ -91,3 +110,9 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+.sticky {
+    position: sticky;
+    top:0;
+}
+

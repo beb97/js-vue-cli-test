@@ -1,5 +1,5 @@
 <template>
-  <div class="flex horizontal">
+  <div class="container flex horizontal center">
         <div v-for="region in regions" :key="region.name" >
           <input :id="region.name" type="checkbox" v-model="selection" v-bind:value="region.name" @change="selectRegion"/>
           <label v-bind:for="region.name">
@@ -63,6 +63,10 @@ input:checked + label > img {
   border: 3px solid var(--active-bg-color);
   border-radius: 10px;
   background-color: lightgoldenrodyellow;
+}
+
+.container {
+  margin: 10px 0;
 }
 
 </style>

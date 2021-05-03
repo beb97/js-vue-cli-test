@@ -1,8 +1,4 @@
 <template>
-  <div class="flex vertical center">
-
-    <img alt="Vue logo" src="./assets/logo.png">
-  </div>
 
 <!--  <AppCurrentDeck>-->
 <!--  </AppCurrentDeck>-->
@@ -42,4 +38,7 @@ export default {
 
 <style>
 @import './assets/css/main.css';
+
+#logo {
+}
 </style>

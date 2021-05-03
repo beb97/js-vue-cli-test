@@ -1,30 +1,17 @@
 <template>
   <div class="flex horizontal center">
-    <h1>Combat tricks</h1>
+    <img alt="Runeterra logo" src="../assets/logo.png"/>
+    <h1 class="">Combat tricks</h1>
   </div>
   <div class="flex vertical center">
-    <div id="filters" class="flex vertical">
+    <div id="filters">
       <Filters v-bind:filters="filters" @filtersUpdated="updateFilters"></Filters>
     </div>
-<!--    <div id="regions" class="flex horizontal">-->
-<!--      <Region v-for="region in regions" :key="region.nameRef" v-bind:region="region" @regionSelected="updateFilters"></Region>-->
-<!--    </div>-->
-    <div class="flex horizontal">
+    <div>
       <Regions v-bind:filters="filters" @regionSelected="updateFilters"></Regions>
     </div>
-    <div id="sets" class="flex horizontal" v-if="false">
-      <Sets v-for="set in sets" :key="set.nameRef" v-bind:set="set"></Sets>
-    </div>
-<!--    <div id="spellSpeeds" class="flex horizontal" v-if="false">-->
-<!--      <SpellSpeed v-for="spellSpeed in spellSpeeds" :key="spellSpeed.nameRef" v-bind:spellSpeed="spellSpeed"></SpellSpeed>-->
-<!--    </div>-->
-<!--    <div id="rarities" class="flex horizontal" v-if="false">-->
-<!--      <Rarity v-for="rarity in rarities" :key="rarity.nameRef" v-bind:rarity="rarity"></Rarity>-->
-<!--    </div>-->
-<!--    <div id="keywords" class="flex horizontal" v-if="false">-->
-<!--      <Keyword v-for="keyword in keywords" :key="keyword.nameRef" v-bind:keyword="keyword"></Keyword>-->
-<!--    </div>-->
   </div>
+  <div class="sticky flex center"><a href="#filters">go to filters</a></div>
   <div id="cards" class="flex horizontal center">
     <Cards v-bind:cards="filteredCards"></Cards>
   </div>
@@ -33,12 +20,7 @@
 
 <script>
 import Cards from './Cards'
-// import Region from './components/Region'
 import Regions from './Regions'
-// import Keyword from './components/Keyword'
-// import SpellSpeed from './components/SpellSpeed'
-// import Rarity from './components/Rarity'
-import Sets from './Sets'
 import Filters from './Filters'
 
 import globals from '../json/globals-en_us.json'
@@ -53,12 +35,7 @@ export default {
   components: {
     Filters,
     Cards,
-    // Region,
     Regions,
-    // Keyword,
-    // SpellSpeed,
-    // Rarity,
-    Sets,
   },
   data() {
     return {
@@ -139,5 +116,23 @@ export default {
 </script>
 
 <style>
+.sticky {
+  background-color: var(--main-bg-color);
+  z-index: 3;
+  height: 40px;
+}
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightgray;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+a:hover {
+  color: var(--active-bg-color);
+  border-color: var(--active-bg-color);
+}
 </style>

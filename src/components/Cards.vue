@@ -108,17 +108,17 @@ export default {
    border-radius: 10px;
    margin-bottom: 10px;
    /*top right bot left*/
-   padding: 5px 5px 15px 10px;
+   padding: 5px 5px 15px 40px;
    color: black;
  }
 
  .card-container {
-   margin-left: -30px;
    margin-bottom: -15px;
+   margin-left: -30px;
    transition-timing-function: ease-in-out;
  }
  .card-container:first-child {
-   margin-left: 5px;
+   /*margin-left: 5px;*/
  }
 
  .card-container:hover > img {
@@ -126,6 +126,16 @@ export default {
    transition: 0.3s;
    z-index: 10;
    filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
+ }
+
+ @media only screen and (max-width: 450px) {
+   .card-container {
+     margin-left: -80px;
+   }
+
+   .container {
+     padding-left: 85px;
+   }
  }
 
 </style>
