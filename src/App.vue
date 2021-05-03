@@ -7,6 +7,7 @@
   </AppCombatTricks>
 
 
+  <footer>by beb97 <a href="https://paypal.me/beb97">support me !</a> </footer>
 </template>
 
 
@@ -39,6 +40,16 @@ export default {
 <style>
 @import './assets/css/main.css';
 
-#logo {
+footer {
+  margin: 20px;
+  color: lightgray;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+footer > a {
+  border-width: 1px;
+  font-weight: normal;
 }
 </style>
