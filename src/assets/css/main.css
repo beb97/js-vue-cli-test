@@ -76,9 +76,13 @@ body {
     font-family: Inter,Roboto, sans-serif;
 }
 
-main {
+.page {
     max-width: 1400px;
     margin: auto;
+}
+
+main {
+
 }
 
 h1,h2,h3 {

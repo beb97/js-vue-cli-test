@@ -1,38 +1,32 @@
 <template>
+  <header>
+    <router-link to="/combat-tricks">combat tricks</router-link>
+    <router-link to="/sprites">sprites pickers</router-link>
+<!--    <a href="/combat-tricks">combat tricks</a>-->
+<!--    <a href="/sprites">sprites pickers</a>-->
+  </header>
 
-<!--  <AppCurrentDeck>-->
-<!--  </AppCurrentDeck>-->
 
-  <AppCombatTricks >
-  </AppCombatTricks>
-
+  <router-view/>
 
   <footer>by beb97 <a href="https://paypal.me/beb97">support me !</a> </footer>
 </template>
 
 
 <script>
-import AppCombatTricks from './components/AppCombatTricks'
-// import AppCurrentDeck from './components/AppCurrentDeck'
-
 
 export default {
   name: 'App',
   components: {
-    AppCombatTricks,
-    // AppCurrentDeck,
+
   },
   data() {
     return {
+
     }
   },
   computed: {
-
-
   },
-  methods: {
-
-    },
 
 }
 </script>

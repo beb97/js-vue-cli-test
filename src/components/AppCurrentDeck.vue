@@ -29,34 +29,34 @@ export default {
     const loading = ref(true);
     const error = ref(null);
 
-    function fetchData() {
-      loading.value= true;
-      return fetch('http://localhost:21337/static-decklist', {
-        method: 'get',
-        // mode: 'no-cors',
-        headers: {
-          'content-type': 'text/plain'
-          // 'content-type': 'application/json'
-        }
-      })   .then(res => {
-        return res.json();
-      })
-      .then(json => {
-        // set the response data
-        data.value = json.data;
-      })
-      .catch(err => {
-        error.value = err;
-        console.log(err);
-      })
-      .then(() => {
-        loading.value = false;
-      });
-    }
+    // function fetchData() {
+    //   loading.value= true;
+    //   return fetch('http://localhost:21337/static-decklist', {
+    //     method: 'get',
+    //     // mode: 'no-cors',
+    //     headers: {
+    //       'content-type': 'text/plain'
+    //       // 'content-type': 'application/json'
+    //     }
+    //   })   .then(res => {
+    //     return res.json();
+    //   })
+    //   .then(json => {
+    //     // set the response data
+    //     data.value = json.data;
+    //   })
+    //   .catch(err => {
+    //     error.value = err;
+    //     console.log(err);
+    //   })
+    //   .then(() => {
+    //     loading.value = false;
+    //   });
+    // }
 
     onMounted(() =>
-        fetchData()
-    // console.log("mounted current deck")
+        // fetchData()
+    console.log("mounted current deck")
     )
 
     return {
