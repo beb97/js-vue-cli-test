@@ -1,7 +1,10 @@
 <template>
   <header>
-    <router-link to="/combat-tricks">combat tricks</router-link>
-    <router-link to="/sprites">sprites pickers</router-link>
+    <nav class="display flex center">
+      <router-link to="/combat-tricks">combat tricks</router-link>
+      <router-link to="/sprites">sprites pickers</router-link>
+      <router-link to="/current">current deck</router-link>
+    </nav>
 <!--    <a href="/combat-tricks">combat tricks</a>-->
 <!--    <a href="/sprites">sprites pickers</a>-->
   </header>
@@ -9,7 +12,7 @@
 
   <router-view/>
 
-  <footer>by beb97 <a href="https://paypal.me/beb97">support me !</a> </footer>
+<!--  <footer>by beb97 <a href="https://paypal.me/beb97">support me !</a> </footer>-->
 </template>
 
 
@@ -33,6 +36,17 @@ export default {
 
 <style>
 @import './assets/css/main.css';
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightgray;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  padding: 0 10px;
+  white-space: nowrap;
+  margin: 5px 10px;
+}
 
 footer {
   margin: 20px;

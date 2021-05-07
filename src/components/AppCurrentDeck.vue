@@ -1,17 +1,17 @@
 <template>
-  <div class="flex horizontal center">
+  <div class="flex vertical center">
     <h1>Current Deck</h1>
+    Work in progress
   </div>
-  {{ data }}
-  <div id="cards" class="flex horizontal center">
-    <Cards v-bind:cards="filteredCards"></Cards>
-  </div>
+<!--  <div id="cards" class="flex horizontal center">-->
+<!--    <Cards v-bind:cards="filteredCards"></Cards>-->
+<!--  </div>-->
 
 </template>
 
 
 <script>
-import Cards from './Cards'
+// import Cards from './Cards'
 
 import set1 from '../json/set1-en_us.json'
 import set2 from '../json/set2-en_us.json'
@@ -22,7 +22,7 @@ import {onMounted, ref} from "vue";
 export default {
   name: 'AppCurrentDeck',
   components: {
-    Cards,
+    // Cards,
   },
   setup() {
     const data = ref(null);

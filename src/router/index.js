@@ -2,14 +2,15 @@
 import { createWebHistory, createRouter } from "vue-router";
 import AppCombatTricks from '../components/AppCombatTricks'
 import AppCurrentDeck from '../components/AppCurrentDeck'
+import AppSpritePicker from '../components/AppSpritePicker'
 import NotFound from '../components/NotFound'
 import { publicPath } from '../../vue.config'
 
 const routes = [
     {
-        path: "/",
+        path: publicPath,
         name: "Home",
-        component: AppCombatTricks,
+        component: AppSpritePicker,
     },
     {
         path: "/combat-tricks",
@@ -19,6 +20,11 @@ const routes = [
     {
         path: "/sprites",
         name: "Sprites",
+        component: AppSpritePicker,
+    },
+    {
+        path: "/current",
+        name: "CurrentDeck",
         component: AppCurrentDeck,
     },
     {

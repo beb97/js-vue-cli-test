@@ -6,11 +6,11 @@
 
     <input type="range" min="0" max="10" class="slider" id="costSlider" list="costSliderTicks" v-model="cost" @change="selectCost">
     <output class="range-value flex center"><div>{{cost}}</div></output>
-    <datalist id="costSliderTicks">
-      <option value="0" label="0"></option>
-      <option value="3" label="3"></option>
-      <option value="10" label="10"></option>
-    </datalist>
+<!--    <datalist id="costSliderTicks">-->
+<!--      <option value="0" label="0"></option>-->
+<!--      <option value="3" label="3"></option>-->
+<!--      <option value="10" label="10"></option>-->
+<!--    </datalist>-->
   </div>
 
 </template>

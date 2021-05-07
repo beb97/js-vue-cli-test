@@ -11,7 +11,10 @@
       <Regions v-bind:filters="filters" @regionSelected="updateFilters"></Regions>
     </div>
   </div>
-  <div class="sticky flex center"><a href="#filters">go to filters</a></div>
+  <div class="sticky flex center">
+  <div><a href="#filters">go to filters</a></div>
+  <div ><a href="#filters" @click="resetFilters">reset filters</a></div>
+  </div>
   <div id="cards" class="flex horizontal center">
     <Cards v-bind:cards="filteredCards"></Cards>
   </div>
@@ -76,6 +79,11 @@ export default {
 
   },
   methods: {
+    resetFilters() {
+      this.filters.region=[];
+      this.filters.cost=[0,1,2,3];
+      console.log("filters reset", this.filters);
+    },
     updateFilters(filters) {
       // Due to limitations in JavaScript, Vue cannot detect the following changes to an array:
       this.filters[Object.keys(filters)]=Object.values(filters)[0];
@@ -115,7 +123,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .sticky {
   background-color: var(--main-bg-color);
   z-index: 3;
@@ -129,6 +137,7 @@ a {
   border: 3px solid lightgray;
   border-radius: 10px;
   padding: 0 10px;
+  white-space: nowrap;
 }
 
 a:hover {
