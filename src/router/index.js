@@ -11,19 +11,20 @@ const routes = [
         path: publicPath,
         name: "Home",
         component: AppSpritePicker,
+        // children: []
     },
     {
-        path: "/combat-tricks",
+        path: publicPath+"/combat-tricks",
         name: "CombatTricks",
         component: AppCombatTricks,
     },
     {
-        path: "/sprites",
+        path: publicPath+"/sprites",
         name: "Sprites",
         component: AppSpritePicker,
     },
     {
-        path: "/current",
+        path: publicPath+"/current",
         name: "CurrentDeck",
         component: AppCurrentDeck,
     },
@@ -31,6 +32,7 @@ const routes = [
         path: "/:catchAll(.*)",
         component: NotFound,
     },
+
 ];
 
 const router = createRouter({

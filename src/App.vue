@@ -1,9 +1,9 @@
 <template>
   <header>
     <nav class="display flex center">
-      <router-link to="/combat-tricks">combat tricks</router-link>
-      <router-link to="/sprites">sprites pickers</router-link>
-      <router-link to="/current">current deck</router-link>
+      <router-link  to="combat-tricks">combat tricks</router-link>
+      <router-link  to="sprites">sprites pickers</router-link>
+      <router-link  to="current">current deck</router-link>
     </nav>
 <!--    <a href="/combat-tricks">combat tricks</a>-->
 <!--    <a href="/sprites">sprites pickers</a>-->
