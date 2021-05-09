@@ -12,7 +12,7 @@
 
   <router-view/>
 
-<!--  <footer>by beb97 <a href="https://paypal.me/beb97">support me !</a> </footer>-->
+  <footer>by beb97 <a href="https://paypal.me/beb97">support me !</a> </footer>
 </template>
 
 

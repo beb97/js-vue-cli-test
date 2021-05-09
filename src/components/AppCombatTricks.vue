@@ -13,7 +13,7 @@
   </div>
   <div class="sticky flex center">
   <div><a href="#filters">go to filters</a></div>
-  <div ><a href="#filters" @click="resetFilters">reset filters</a></div>
+<!--  <div ><a href="#filters" @click="resetFilters">reset filters</a></div>-->
   </div>
   <div id="cards" class="flex horizontal center">
     <Cards v-bind:cards="filteredCards"></Cards>

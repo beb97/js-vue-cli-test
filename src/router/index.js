@@ -10,7 +10,7 @@ const routes = [
     {
         path: publicPath,
         name: "Home",
-        component: AppSpritePicker,
+        component: AppCombatTricks,
         // children: []
     },
     {
