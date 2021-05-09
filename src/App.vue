@@ -12,7 +12,7 @@
 
   <router-view/>
 
-  <footer>by beb97 <a href="https://paypal.me/beb97">support me !</a> </footer>
+  <footer class="flex horizontal center"><div>Last update : 09 may 2021 © beb97 <a href="https://paypal.me/beb97">support me !</a> </div></footer>
 </template>
 
 
@@ -49,15 +49,20 @@ header a {
 }
 
 footer {
-  margin: 20px;
+  margin-top: 30px;
+  /*margin: 20px;*/
   color: lightgray;
   text-align: center;
-  position: absolute;
-  bottom: 0;
+  font-size: 0.8em;
+
 }
 
-footer > a {
+footer a {
+  color: var(--active-bg-color);
   border-width: 1px;
   font-weight: normal;
+}
+footer a:visited {
+  color: var(--main-shadow-color);
 }
 </style>
