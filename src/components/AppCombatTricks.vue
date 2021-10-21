@@ -31,6 +31,7 @@ import set1 from '../json/set1-en_us.json'
 import set2 from '../json/set2-en_us.json'
 import set3 from '../json/set3-en_us.json'
 import set4 from '../json/set4-en_us.json'
+import set5 from '../json/set5-en_us.json'
 import excluded from '../json/excluded.json'
 
 export default {
@@ -59,11 +60,12 @@ export default {
       set2: set2,
       set3: set3,
       set4: set4,
+      set5: set5
     }
   },
   computed: {
     collectibles() {
-      let sets = this.set1.concat(this.set2, this.set3, this.set4);
+      let sets = this.set1.concat(this.set2, this.set3, this.set4, this.set5);
       return sets.filter(card => card.collectible).sort(this.sortCards);
     },
     filteredCards() {

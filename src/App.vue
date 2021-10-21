@@ -12,7 +12,7 @@
 
   <router-view/>
 
-  <footer class="flex horizontal center"><div>Last update : 09 may 2021 © beb97 <a href="https://paypal.me/beb97">support me !</a> </div></footer>
+  <footer class="flex horizontal center"><div>Last update : 21 october 2021 © beb97 <a href="https://paypal.me/beb97">support me !</a> </div></footer>
 </template>
 
 
