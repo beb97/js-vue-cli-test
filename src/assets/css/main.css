@@ -27,6 +27,7 @@
     --shurima:#CEA826;
     --bilgewater:#B4573A;
     --piltoverzaun:#EEA25A;
+    --bandlecity:#d2dc4d;
 }
 
 .targon {
@@ -66,6 +67,10 @@
     color: var(--piltoverzaun);
     background-color: var(--piltoverzaun);
     border-color:var(--piltoverzaun);}
+.bandlecity {
+    color: var(--bandlecity);
+    background-color: var(--bandlecity);
+    border-color:var(--bandlecity);}
 
 html {
     color: #222;
